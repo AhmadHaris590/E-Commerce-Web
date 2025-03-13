@@ -1,0 +1,221 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    display: flex;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+/* Hero Section */
+.hero {
+    background: url('image/hero-bg.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #0056b3;
+}
+
+/* Product List */
+.products {
+    padding: 20px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product-item {
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-item h3 {
+    font-size: 1.2rem;
+}
+
+/* Product Details */
+.product-details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-container {
+    max-width: 600px;
+    text-align: center;
+}
+
+.product-info p {
+    margin: 10px 0;
+}
+
+#add-to-cart-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#add-to-cart-button:hover {
+    background-color: #218838;
+}
+
+/* Cart Page */
+.cart {
+    padding: 20px;
+}
+
+#cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cart-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-item img {
+    max-width: 50px;
+    height: auto;
+}
+
+.remove-button {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.remove-button:hover {
+    background-color: #c82333;
+}
+
+.bg-img{
+    background-color: grey;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 98.7%;
+}
+
+.sign-in-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    /* background-color: grey; */
+    background: url('image/hero-bg.jpg') no-repeat center center/cover;
+
+}
+.sign-in-border{
+    background-color: white;
+    opacity: 0.7;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    width: 30%;
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+}
+.sign-in-input{
+    width: 80%;
+    height: 10%;
+    border-radius: 15px;
+    font-size: 15px;
+}
+.sign-in-input::placeholder{
+    font-size: 15px;
+    font-weight: bold;
+    opacity: 0.5;
+}
+.sign-in-border button{
+    width: 30%;
+    height: 10%;
+    border-radius: 20px;
+    background-color:#007bff;
+    color: white;
+    border: 1px solid grey;
+    cursor: pointer;
+}
