@@ -27,7 +27,9 @@ document.getElementById("loginBtn").addEventListener("click", function () {
         passwordError.textContent="Password must contain 8 or more digit!";
         return;
     }
+    // Save login status in localStorage
+    localStorage.setItem("loggedInUser", email);
 
-    // Redirect to index page if everything is fine
+    // Redirect to index.html
     window.location.href = "index.html";
 });

@@ -23,6 +23,7 @@ header {
 .nav-links {
     list-style-type: none;
     display: flex;
+    align-items: center ;
     gap: 15px;
 }
 
@@ -34,6 +35,16 @@ header {
     text-decoration: none;
     color: white;
     font-weight: bold;
+}
+
+#logoutBtn{
+    padding: 5px;
+    border-radius: 10px;
+    width: 80px;
+    background-color:red;
+    color: white;
+    border: 1px solid grey;
+    cursor: pointer;
 }
 
 .logo {
